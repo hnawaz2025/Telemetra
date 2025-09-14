@@ -1,0 +1,101 @@
+risk_prediction,risk_probability,risk_score,risk_category,actual_risk,pricing_tier
+0,0.14412793517112732,14.41,Very Low,0,Tier 1 - Preferred Plus
+1,0.31328871846199036,31.33,Low,0,Tier 2 - Preferred
+1,0.49781653881072996,49.78,Medium,1,Tier 3 - Standard
+1,0.4851483583450317,48.51,Medium,1,Tier 3 - Standard
+1,0.6118862688541412,61.19,High,1,Tier 4 - Standard Plus
+1,0.4241689592599869,42.42,Medium,1,Tier 3 - Standard
+1,0.3116666734218597,31.17,Low,0,Tier 2 - Preferred
+1,0.29293418526649473,29.29,Low,0,Tier 2 - Preferred
+0,0.06852737367153168,6.85,Very Low,0,Tier 1 - Preferred Plus
+1,0.19833333790302277,19.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+0,0.08522186875343322,8.52,Very Low,0,Tier 1 - Preferred Plus
+0,0.09400078058242797,9.4,Very Low,0,Tier 1 - Preferred Plus
+0,0.16916967630386354,16.92,Very Low,0,Tier 1 - Preferred Plus
+1,0.25166667103767393,25.17,Low,0,Tier 2 - Preferred
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+1,0.41930373907089236,41.93,Medium,1,Tier 3 - Standard
+1,0.4549801230430603,45.5,Medium,1,Tier 3 - Standard
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.10833333432674408,10.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.11833333671092987,11.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.24454132318496705,24.45,Low,0,Tier 2 - Preferred
+1,0.4294905424118042,42.95,Medium,1,Tier 3 - Standard
+0,0.1623350590467453,16.23,Very Low,0,Tier 1 - Preferred Plus
+1,0.4291168570518494,42.91,Medium,1,Tier 3 - Standard
+1,0.4066666722297668,40.67,Medium,1,Tier 3 - Standard
+1,0.4066666722297668,40.67,Medium,1,Tier 3 - Standard
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+0,0.13453245162963867,13.45,Very Low,0,Tier 1 - Preferred Plus
+1,0.18833333551883696,18.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.33166667222976687,33.17,Low,1,Tier 2 - Preferred
+1,0.26833333671092985,26.83,Low,0,Tier 2 - Preferred
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+1,0.35333333909511566,35.33,Low,0,Tier 2 - Preferred
+1,0.6266666710376739,62.67,High,1,Tier 4 - Standard Plus
+0,0.10833333432674408,10.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.4066666722297668,40.67,Medium,1,Tier 3 - Standard
+1,0.2705658823251724,27.06,Low,0,Tier 2 - Preferred
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+1,0.35333333909511566,35.33,Low,0,Tier 2 - Preferred
+1,0.27842762470245364,27.84,Low,0,Tier 2 - Preferred
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.47560843229293825,47.56,Medium,1,Tier 3 - Standard
+1,0.45701690912246706,45.7,Medium,1,Tier 3 - Standard
+0,0.13833333551883698,13.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.08520788252353668,8.52,Very Low,0,Tier 1 - Preferred Plus
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.28935444056987764,28.94,Low,0,Tier 2 - Preferred
+1,0.41709187626838684,41.71,Medium,1,Tier 3 - Standard
+1,0.19833333790302277,19.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.4275283098220825,42.75,Medium,1,Tier 3 - Standard
+1,0.192535200715065,19.25,Very Low,0,Tier 1 - Preferred Plus
+0,0.13924968410283328,13.92,Very Low,0,Tier 1 - Preferred Plus
+0,0.14726722836494446,14.73,Very Low,0,Tier 1 - Preferred Plus
+0,0.13833333551883698,13.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.3919356644153595,39.19,Low,1,Tier 2 - Preferred
+1,0.4066666722297668,40.67,Medium,1,Tier 3 - Standard
+1,0.4724599003791809,47.25,Medium,1,Tier 3 - Standard
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.33166667222976687,33.17,Low,0,Tier 2 - Preferred
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.06026030424982309,6.03,Very Low,0,Tier 1 - Preferred Plus
+1,0.4558816432952881,45.59,Medium,1,Tier 3 - Standard
+0,0.05833333432674408,5.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.6088459551334381,60.88,High,1,Tier 4 - Standard Plus
+1,0.3116666734218597,31.17,Low,0,Tier 2 - Preferred
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+1,0.4535668969154358,45.36,Medium,1,Tier 3 - Standard
+0,0.08768812539055944,8.77,Very Low,0,Tier 1 - Preferred Plus
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+1,0.27833333909511565,27.83,Low,0,Tier 2 - Preferred
+1,0.21833333671092986,21.83,Low,0,Tier 2 - Preferred
+1,0.2758301645517349,27.58,Low,0,Tier 2 - Preferred
+1,0.289407479763031,28.94,Low,0,Tier 2 - Preferred
+1,0.32573274075984954,32.57,Low,0,Tier 2 - Preferred
+1,0.40101768970489504,40.1,Medium,0,Tier 3 - Standard
+1,0.3996807157993317,39.97,Low,0,Tier 2 - Preferred
+1,0.19077204763889313,19.08,Very Low,0,Tier 1 - Preferred Plus
+1,0.28109458088874817,28.11,Low,0,Tier 2 - Preferred
+1,0.3966666698455811,39.67,Low,1,Tier 2 - Preferred
+1,0.37294424772262574,37.29,Low,0,Tier 2 - Preferred
+1,0.2271517664194107,22.72,Low,0,Tier 2 - Preferred
+1,0.37514752745628355,37.51,Low,0,Tier 2 - Preferred
+0,0.07798307687044144,7.8,Very Low,0,Tier 1 - Preferred Plus
+1,0.2394005239009857,23.94,Low,0,Tier 2 - Preferred
+1,0.3870423257350922,38.7,Low,0,Tier 2 - Preferred
+1,0.3116666734218597,31.17,Low,0,Tier 2 - Preferred
+1,0.2254210740327835,22.54,Low,0,Tier 2 - Preferred
+0,0.13833333551883698,13.83,Very Low,0,Tier 1 - Preferred Plus
+0,0.17166666984558104,17.17,Very Low,0,Tier 1 - Preferred Plus
+1,0.44715174436569216,44.72,Medium,0,Tier 3 - Standard
+0,0.08032305985689163,8.03,Very Low,0,Tier 1 - Preferred Plus
+1,0.3903513431549072,39.04,Low,0,Tier 2 - Preferred
+1,0.37333333790302276,37.33,Low,0,Tier 2 - Preferred
+1,0.45629404187202455,45.63,Medium,1,Tier 3 - Standard
+0,0.13833333551883698,13.83,Very Low,0,Tier 1 - Preferred Plus
+1,0.35843307375907896,35.84,Low,0,Tier 2 - Preferred
+1,0.3116666734218597,31.17,Low,0,Tier 2 - Preferred

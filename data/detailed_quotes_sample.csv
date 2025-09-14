@@ -1,0 +1,11 @@
+driver_id,risk_score,annual_premium,monthly_premium,pricing_tier,behavioral_factor,traditional_factor,base_premium,behavioral_component,traditional_component
+driver_0001,14.41,1059.94,88.33,Preferred Plus,0.815,0.929,1200.0,391.33,668.61
+driver_0002,31.33,1071.91,89.33,Preferred,0.951,0.855,1200.0,456.31,615.6
+driver_0003,49.78,1279.56,106.63,Preferred,1.098,1.045,1200.0,527.16,752.4
+driver_0004,48.51,1206.28,100.52,Preferred,1.088,0.95,1200.0,522.28,684.0
+driver_0005,61.19,1152.37,96.03,Standard,1.19,0.807,1200.0,570.97,581.4
+driver_0006,42.42,1114.49,92.87,Preferred,1.039,0.855,1200.0,498.89,615.6
+driver_0007,31.17,1163.63,96.97,Preferred,0.949,0.983,1200.0,455.69,707.94
+driver_0008,29.29,1371.87,114.32,Standard,0.934,1.282,1200.0,448.47,923.4
+driver_0009,6.85,1559.3,129.94,Standard,0.755,1.662,1200.0,362.3,1197.0
+driver_0010,19.83,1096.15,91.35,Preferred,0.859,0.95,1200.0,412.15,684.0

@@ -1,0 +1,32 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Virtual envs
+venv/
+.venv/
+telev/
+
+# Streamlit cache
+.streamlit/
+.streamlit_cache/
+
+# Build / outputs / models
+outputs/
+models/
+
+# Local data (adjust if you want to track some CSVs)
+data/*.parquet
+data/*.feather
+data/*.zip
+data/*.gz
+
+# Backups / accidental URL-like folders
+_backup/
+https:/

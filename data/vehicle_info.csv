@@ -1,0 +1,101 @@
+vehicle_id,make,model,variant,year,airbags,sensors,safety_features_count
+veh_0001,Honda,Civic,Base,2010,5,7,8
+veh_0002,Tesla,Model 3,Touring,2012,4,6,7
+veh_0003,Ford,F-150,Limited,2010,3,1,3
+veh_0004,Honda,Civic,Sport,2023,3,2,4
+veh_0005,Hyundai,Elantra,Base,2024,3,0,3
+veh_0006,Toyota,Camry,Sport,2021,5,2,6
+veh_0007,Ford,F-150,Touring,2010,8,4,10
+veh_0008,Toyota,Camry,Touring,2014,4,7,7
+veh_0009,Hyundai,Elantra,Touring,2009,7,3,8
+veh_0010,Nissan,Rogue,XLT,2014,2,3,3
+veh_0011,Toyota,Camry,Limited,2024,2,1,2
+veh_0012,Hyundai,Elantra,SE,2009,2,0,2
+veh_0013,Tesla,Model 3,Limited,2006,4,4,6
+veh_0014,Ford,F-150,SE,2022,9,2,10
+veh_0015,Honda,Civic,Sport,2022,3,3,4
+veh_0016,Hyundai,Elantra,Sport,2019,6,1,6
+veh_0017,Subaru,Outback,SE,2007,9,1,9
+veh_0018,Tesla,Model 3,Base,2006,5,6,8
+veh_0019,Nissan,Rogue,Sport,2007,4,4,6
+veh_0020,Hyundai,Elantra,Sport,2023,3,6,6
+veh_0021,Tesla,Model 3,SE,2014,2,3,3
+veh_0022,Ford,F-150,Sport,2015,9,6,12
+veh_0023,Toyota,Camry,Touring,2014,8,7,11
+veh_0024,Tesla,Model 3,Sport,2023,3,0,3
+veh_0025,Ford,F-150,Sport,2021,6,5,8
+veh_0026,Hyundai,Elantra,XLT,2014,6,7,9
+veh_0027,Nissan,Rogue,SE,2006,5,4,7
+veh_0028,Honda,CR-V,SE,2011,5,7,8
+veh_0029,Subaru,Outback,Touring,2006,3,4,5
+veh_0030,Tesla,Model 3,Sport,2014,5,3,6
+veh_0031,Honda,CR-V,Touring,2006,4,0,4
+veh_0032,Honda,CR-V,EX,2009,2,0,2
+veh_0033,Hyundai,Elantra,XLT,2007,7,1,7
+veh_0034,Ford,F-150,SE,2011,6,3,7
+veh_0035,Toyota,Camry,Touring,2020,4,5,6
+veh_0036,Toyota,Camry,SE,2012,6,6,9
+veh_0037,Hyundai,Elantra,XLT,2019,2,4,4
+veh_0038,Honda,Civic,Touring,2018,2,1,2
+veh_0039,Subaru,Outback,Touring,2014,2,6,5
+veh_0040,Nissan,Rogue,LE,2021,4,6,7
+veh_0041,Nissan,Rogue,Limited,2013,7,6,10
+veh_0042,Tesla,Model 3,Limited,2023,8,1,8
+veh_0043,Ford,F-150,XLT,2008,6,4,8
+veh_0044,Hyundai,Elantra,LE,2023,7,0,7
+veh_0045,Subaru,Outback,Touring,2022,3,7,6
+veh_0046,Honda,CR-V,EX,2023,9,2,10
+veh_0047,Honda,Civic,Base,2015,2,6,5
+veh_0048,Honda,Civic,Limited,2019,3,7,6
+veh_0049,Honda,CR-V,LE,2019,4,6,7
+veh_0050,Honda,Civic,LE,2018,6,7,9
+veh_0051,Hyundai,Elantra,EX,2023,7,4,9
+veh_0052,Tesla,Model 3,Base,2010,2,3,3
+veh_0053,Honda,Civic,XLT,2012,3,1,3
+veh_0054,Subaru,Outback,Sport,2022,3,4,5
+veh_0055,Tesla,Model 3,LE,2022,5,4,7
+veh_0056,Honda,CR-V,EX,2014,3,3,4
+veh_0057,Toyota,Camry,XLT,2016,3,0,3
+veh_0058,Honda,CR-V,Sport,2012,2,1,2
+veh_0059,Tesla,Model 3,Touring,2019,8,4,10
+veh_0060,Honda,CR-V,SE,2015,2,6,5
+veh_0061,Honda,CR-V,Base,2010,6,2,7
+veh_0062,Subaru,Outback,EX,2017,9,6,12
+veh_0063,Toyota,Camry,Sport,2023,3,1,3
+veh_0064,Subaru,Outback,XLT,2018,3,4,5
+veh_0065,Ford,F-150,Base,2016,3,6,6
+veh_0066,Ford,F-150,Sport,2021,8,2,9
+veh_0067,Honda,Civic,EX,2024,9,0,9
+veh_0068,Honda,Civic,Limited,2015,7,0,7
+veh_0069,Honda,CR-V,EX,2024,2,5,4
+veh_0070,Honda,CR-V,XLT,2017,8,2,9
+veh_0071,Hyundai,Elantra,Touring,2006,7,7,10
+veh_0072,Ford,F-150,XLT,2010,5,3,6
+veh_0073,Hyundai,Elantra,SE,2009,9,5,11
+veh_0074,Nissan,Rogue,EX,2015,7,7,10
+veh_0075,Honda,Civic,Touring,2009,9,4,11
+veh_0076,Ford,F-150,Sport,2007,7,5,9
+veh_0077,Subaru,Outback,Base,2017,6,5,8
+veh_0078,Ford,F-150,Touring,2017,9,5,11
+veh_0079,Toyota,Camry,Sport,2009,8,6,11
+veh_0080,Toyota,Camry,Touring,2006,3,3,4
+veh_0081,Honda,Civic,Base,2011,4,7,7
+veh_0082,Subaru,Outback,Sport,2013,9,5,11
+veh_0083,Ford,F-150,XLT,2007,8,3,9
+veh_0084,Nissan,Rogue,Touring,2022,9,5,11
+veh_0085,Honda,CR-V,EX,2013,6,4,8
+veh_0086,Ford,F-150,EX,2014,6,6,9
+veh_0087,Hyundai,Elantra,Touring,2017,9,5,11
+veh_0088,Honda,Civic,Sport,2009,7,2,8
+veh_0089,Hyundai,Elantra,SE,2019,7,5,9
+veh_0090,Hyundai,Elantra,LE,2020,8,4,10
+veh_0091,Nissan,Rogue,Base,2021,2,0,2
+veh_0092,Honda,Civic,Base,2021,2,1,2
+veh_0093,Hyundai,Elantra,SE,2020,9,3,10
+veh_0094,Honda,Civic,Touring,2023,3,4,5
+veh_0095,Ford,F-150,Touring,2008,2,3,3
+veh_0096,Nissan,Rogue,Limited,2022,5,0,5
+veh_0097,Hyundai,Elantra,Limited,2012,6,2,7
+veh_0098,Tesla,Model 3,EX,2024,6,6,9
+veh_0099,Ford,F-150,Sport,2006,7,6,10
+veh_0100,Nissan,Rogue,Sport,2007,4,4,6

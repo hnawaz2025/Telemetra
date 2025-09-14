@@ -1,0 +1,101 @@
+driver_id,risk_score,annual_premium,monthly_premium,pricing_tier,behavioral_factor,traditional_factor
+driver_0,14.41,1059.94,88.33,Preferred Plus,0.815,0.929
+driver_1,31.33,1071.91,89.33,Preferred,0.951,0.855
+driver_2,49.78,1279.56,106.63,Preferred,1.098,1.045
+driver_3,48.51,1206.28,100.52,Preferred,1.088,0.95
+driver_4,61.19,1152.37,96.03,Standard,1.19,0.807
+driver_5,42.42,1114.49,92.87,Preferred,1.039,0.855
+driver_6,31.17,1163.63,96.97,Preferred,0.949,0.983
+driver_7,29.29,1371.87,114.32,Standard,0.934,1.282
+driver_8,6.85,1559.3,129.94,Standard,0.755,1.662
+driver_9,19.83,1096.15,91.35,Preferred,0.859,0.95
+driver_10,27.83,1024.27,85.36,Preferred,0.923,0.807
+driver_11,8.52,1292.12,107.68,Preferred,0.768,1.282
+driver_12,9.4,1295.5,107.96,Preferred,0.775,1.282
+driver_13,16.92,1016.57,84.71,Preferred Plus,0.835,0.855
+driver_14,25.17,1048.25,87.35,Preferred,0.901,0.855
+driver_15,27.83,1643.29,136.94,Non-Standard,0.923,1.667
+driver_16,41.93,1112.61,92.72,Preferred,1.035,0.855
+driver_17,45.5,1434.12,119.51,Standard,1.064,1.282
+driver_18,5.83,939.79,78.32,Preferred Plus,0.747,0.807
+driver_19,10.83,1439.5,119.96,Standard,0.787,1.475
+driver_20,11.83,1065.43,88.79,Preferred Plus,0.795,0.95
+driver_21,24.45,1045.49,87.12,Preferred Plus,0.896,0.855
+driver_22,42.95,1256.75,104.73,Preferred,1.044,1.05
+driver_23,16.23,979.72,81.64,Preferred Plus,0.83,0.807
+driver_24,42.91,1082.17,90.18,Preferred,1.043,0.807
+driver_25,40.67,1160.78,96.73,Preferred,1.025,0.929
+driver_26,40.67,1176.17,98.01,Preferred,1.025,0.95
+driver_27,27.83,1229.47,102.46,Preferred,0.923,1.092
+driver_28,13.45,1311.05,109.25,Preferred,0.808,1.282
+driver_29,18.83,989.71,82.48,Preferred Plus,0.851,0.807
+driver_30,33.17,1147.37,95.61,Preferred,0.965,0.95
+driver_31,26.83,1123.03,93.59,Preferred,0.915,0.95
+driver_32,27.83,1058.47,88.21,Preferred,0.923,0.855
+driver_33,35.33,1395.07,116.26,Standard,0.983,1.282
+driver_34,62.67,1284.59,107.05,Standard,1.201,0.983
+driver_35,10.83,993.19,82.77,Preferred Plus,0.787,0.855
+driver_36,5.83,1144.99,95.42,Preferred,0.747,1.092
+driver_37,40.67,1176.17,98.01,Preferred,1.025,0.95
+driver_38,27.06,1363.31,113.61,Standard,0.916,1.282
+driver_39,27.83,1058.47,88.21,Preferred,0.923,0.855
+driver_40,35.33,1395.07,116.26,Standard,0.983,1.282
+driver_41,27.84,1639.91,136.66,Non-Standard,0.923,1.662
+driver_42,5.83,973.99,81.17,Preferred Plus,0.747,0.855
+driver_43,47.56,1202.63,100.22,Preferred,1.08,0.95
+driver_44,45.7,1434.89,119.57,Standard,1.066,1.282
+driver_45,13.83,1004.71,83.73,Preferred Plus,0.811,0.855
+driver_46,8.52,1052.72,87.73,Preferred Plus,0.768,0.95
+driver_47,5.83,1420.3,118.36,Standard,0.747,1.475
+driver_48,28.94,1028.53,85.71,Preferred,0.932,0.807
+driver_49,41.71,1111.77,92.65,Preferred,1.034,0.855
+driver_50,19.83,1096.15,91.35,Preferred,0.859,0.95
+driver_51,42.75,1081.56,90.13,Preferred,1.042,0.807
+driver_52,19.25,1025.52,85.46,Preferred Plus,0.854,0.855
+driver_53,13.92,1073.45,89.45,Preferred Plus,0.811,0.95
+driver_54,14.73,1076.56,89.71,Preferred Plus,0.818,0.95
+driver_55,13.83,970.51,80.88,Preferred Plus,0.811,0.807
+driver_56,5.83,939.79,78.32,Preferred Plus,0.747,0.807
+driver_57,39.19,1170.49,97.54,Preferred,1.014,0.95
+driver_58,40.67,1244.57,103.71,Preferred,1.025,1.045
+driver_59,47.25,1225.38,102.12,Preferred,1.078,0.983
+driver_60,5.83,1336.51,111.38,Standard,0.747,1.359
+driver_61,33.17,1525.28,127.11,Standard,0.965,1.475
+driver_62,5.83,1281.79,106.82,Preferred,0.747,1.282
+driver_63,6.03,1067.1,88.92,Preferred Plus,0.748,0.983
+driver_64,45.59,1434.47,119.54,Standard,1.065,1.282
+driver_65,5.83,1110.79,92.57,Preferred,0.747,1.045
+driver_66,60.88,1766.78,147.23,Non-Standard,1.187,1.662
+driver_67,31.17,1139.69,94.97,Preferred,0.949,0.95
+driver_68,27.83,1366.27,113.86,Standard,0.923,1.282
+driver_69,45.36,1433.58,119.47,Standard,1.063,1.282
+driver_70,8.77,1431.59,119.3,Standard,0.77,1.475
+driver_71,27.83,1150.81,95.9,Preferred,0.923,0.983
+driver_72,27.83,1058.47,88.21,Preferred,0.923,0.855
+driver_73,21.83,1103.83,91.99,Preferred,0.875,0.95
+driver_74,27.58,1638.91,136.58,Non-Standard,0.921,1.662
+driver_75,28.94,1028.53,85.71,Preferred,0.932,0.807
+driver_76,32.57,1247.67,103.97,Preferred,0.961,1.092
+driver_77,40.1,1515.98,126.33,Standard,1.021,1.425
+driver_78,39.97,1412.88,117.74,Standard,1.02,1.282
+driver_79,19.08,1252.3,104.36,Preferred,0.853,1.171
+driver_80,28.11,1640.94,136.75,Non-Standard,0.925,1.662
+driver_81,39.67,1196.27,99.69,Preferred,1.017,0.983
+driver_82,37.29,1060.59,88.38,Preferred,0.998,0.807
+driver_83,22.72,1038.84,86.57,Preferred Plus,0.882,0.855
+driver_84,37.51,1148.65,95.72,Preferred,1.0,0.929
+driver_85,7.8,1152.55,96.05,Preferred,0.762,1.092
+driver_86,23.94,1351.33,112.61,Standard,0.892,1.282
+driver_87,38.7,1168.61,97.38,Preferred,1.01,0.95
+driver_88,31.17,1379.09,114.92,Standard,0.949,1.282
+driver_89,22.54,1484.46,123.71,Standard,0.88,1.475
+driver_90,13.83,970.51,80.88,Preferred Plus,0.811,0.807
+driver_91,17.17,1325.33,110.44,Standard,0.837,1.282
+driver_92,44.72,1089.12,90.76,Preferred,1.058,0.807
+driver_93,8.03,982.44,81.87,Preferred Plus,0.764,0.855
+driver_94,39.04,1101.51,91.79,Preferred,1.012,0.855
+driver_95,37.33,1094.95,91.25,Preferred,0.999,0.855
+driver_96,45.63,1126.82,93.9,Preferred,1.065,0.855
+driver_97,13.83,1312.51,109.38,Preferred,0.811,1.282
+driver_98,35.84,1181.57,98.46,Preferred,0.987,0.983
+driver_99,31.17,1037.09,86.42,Preferred,0.949,0.807
