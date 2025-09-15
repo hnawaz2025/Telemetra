@@ -1,4 +1,4 @@
-Telemetra — Telematics-Based Auto Insurance 
+**Telemetra — Telematics-Based Auto Insurance **
 
 End-to-end system that converts raw GPS/accelerometer trips into driver-level behavioral features, trains leak-safe models to predict claims risk, and exports calibrated 0–100 risk scores for pricing and a Streamlit dashboard.
 
