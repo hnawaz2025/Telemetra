@@ -85,169 +85,6 @@ pd.read_csv("data/vehicle_info.csv", dtype={"vehicle_id": str})
 - `has_claim` (driver-level rollup of trip_labels)
 - Optional `total_severity` regressor trained only on claimants
 
-## 🚀 Quick Start
-
-### 0. Environment Setup
-
-```bash
-python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 1. Add Your Data
-
-Place your CSV files in `./data/` following the schema above.
-
-## 🔧 Running the System
-
-### Option A: End-to-End Pipeline
-
-```bash
-python src/risk_scoring_run.py
-```
-
-**Artifacts:**
-- Scores: `outputs/behavioral_risk_scores.csv`
-- Features (audit): `outputs/engineered_features_*.csv`
-- Models: `models/*.joblib`
-- Performance summary: `outputs/model_performance_summary_*.json`
-
-**Make scores visible to the app:**
-```bash
-cp outputs/behavioral_risk_scores.csv data/behavioral_risk_scores.csv
-```
-
-### Option B: Dashboard
-
-```bash
-streamlit run app.py
-```
-
-- If `data/behavioral_risk_scores.csv` exists → uses model probabilities
-- If not → uses synthetic fallback (ranked behavioral risk) with same 0–100 scale
-
-## ⚙️ Configuration
-
-### Pipeline Config (`src/pipeline.py`)
-- `min_trips_per_driver` (default 5–10): Filter sparse drivers
-- `test_size` (default 0.25): Driver-level split size
-
-### Model Config (`src/risk_scoring.py`)
-- `feature_selection=True`, `max_features=30`
-- `cv_folds=5`, `random_state=42`
-- Models: Logistic Regression, Random Forest, optional XGBoost
-
-## 📊 Evaluation & Performance
-
-The runner prints per-model metrics:
-- **ROC AUC** (primary)
-- F1, Precision, Recall
-- CV AUC (mean ± std) for stability
-
-Results saved to `outputs/model_performance_summary_*.json`.
-
-**What Good Looks Like:**
-- Inspect feature importances (RF/XGB) or coefficients (LogReg)
-- Validate behavior signal (excess speed, hard events, night exposure should matter)
-
-## 📈 Streamlit Dashboard Features
-
-### KPIs per Driver
-- Risk %, category, event rates, predicted premium
-
-### Visualizations
-- Speed distribution
-- Speed vs limit (recent)
-- Hour-of-day patterns
-- Event rates
-- Map: sampled lat/lon if present
-
-### Premium Sandbox
-- Adjust weights and view premium impact instantly
-
-### Leaderboards
-- Lowest risk
-- Best behavior
-
-**Data Source:** `data/behavioral_risk_scores.csv` (normalized via `ensure_risk_columns()`)
-
-## 💰 Pricing Prototype (Illustrative)
-
-```
-predicted_premium = base * (1 + w_r*risk + w_n*night + w_a*adverse + w_e*excess)
-```
-
-Weights are adjustable in the app sidebar. **Note:** This is not a filed rate; it demonstrates how risk feeds pricing.
-
-## 🛠️ Troubleshooting
-
-### Merge Type Mismatch on driver_id
-```
-ValueError: merge on object and int64 columns for key 'driver_id'
-```
-
-**Fix:** Cast IDs before any merge or export:
-```python
-df["user_id"] = df["user_id"].astype(str)
-df["trip_id"] = df["trip_id"].astype(str)
-scores["driver_id"] = scores["driver_id"].astype(str)
-```
-
-### Read-only Filesystem (e.g., /data)
-If you see `Errno 30 Read-only file system: '/data'`, you're writing to a protected path.
-All scripts use project-relative paths (`./data`, `./outputs`, `./models`). Keep it that way.
-
-### No behavioral_risk_scores.csv
-The app will use synthetic risk automatically.
-
-To use model scores:
-```bash
-python src/risk_scoring_run.py
-cp outputs/behavioral_risk_scores.csv data/behavioral_risk_scores.csv
-```
-
-### XGBoost Missing
-We degrade to LogReg + RF.
-Install to enable: `pip install xgboost`
-
-## ✅ Validation Checklist
-
-- [ ] **Class balance:** Is there enough positives to learn? (Runner prints label distribution)
-- [ ] **Leakage:** Train/valid split is by driver, not by row
-- [ ] **Encoding & scaling:** Fit on train only (handled by pipeline/models)
-- [ ] **Sanity of importances:** Excess speed/hard events should rank high
-- [ ] **Calibration (optional):** Consider Platt/Isotonic if used for pricing
-
-## 🗺️ Roadmap & Future Work
-
-### Temporal Forecasting
-- Lookback window (e.g., last 90 days) → predict next 180 days
-- Enforce time-based cutoff
-
-### Calibration
-- CalibratedClassifierCV, calibration curves, Brier score
-- Make probabilities pricing-grade
-
-### Distance & Routing
-- Haversine distance per trip
-- (Optional) map-matching, route risk exposure to known hotspots
-
-### Streaming
-- Kafka ingest → Spark/Flink jobs compute online features
-- Feature Store (e.g., Feast) for offline/online parity
-
-### Cloud
-- S3 data lake
-- Serverless/containers for scoring API
-- CI/CD with model registry (MLflow)
-
-### Governance
-- Drift detection
-- Periodic backtests
-- Fairness auditing
-- Monotone constraints where appropriate
-
 ## 📚 Complete Runbook
 
 ### 0. One-time Setup
@@ -406,3 +243,101 @@ We fall back to LogReg + RF. To enable: `pip install xgboost`
 - Keep `driver_profile.csv` minimal; avoid sensitive attributes for modeling unless approved & governed
 - Treat all outputs in `./outputs` as confidential; they contain risk and possibly PII joins
 - Add role-based access and encryption at rest/in transit when deploying beyond local
+
+## 📈 Streamlit Dashboard Features
+
+### KPIs per Driver
+- Risk %, category, event rates, predicted premium
+
+### Visualizations
+- Speed distribution
+- Speed vs limit (recent)
+- Hour-of-day patterns
+- Event rates
+- Map: sampled lat/lon if present
+
+### Premium Sandbox
+- Adjust weights and view premium impact instantly
+
+### Leaderboards
+- Lowest risk
+- Best behavior
+
+**Data Source:** `data/behavioral_risk_scores.csv` (normalized via `ensure_risk_columns()`)
+
+## 💰 Pricing Prototype (Illustrative)
+
+```
+predicted_premium = base * (1 + w_r*risk + w_n*night + w_a*adverse + w_e*excess)
+```
+
+Weights are adjustable in the app sidebar. **Note:** This is not a filed rate; it demonstrates how risk feeds pricing.
+
+## 🛠️ Troubleshooting
+
+### Merge Type Mismatch on driver_id
+```
+ValueError: merge on object and int64 columns for key 'driver_id'
+```
+
+**Fix:** Cast IDs before any merge or export:
+```python
+df["user_id"] = df["user_id"].astype(str)
+df["trip_id"] = df["trip_id"].astype(str)
+scores["driver_id"] = scores["driver_id"].astype(str)
+```
+
+### Read-only Filesystem (e.g., /data)
+If you see `Errno 30 Read-only file system: '/data'`, you're writing to a protected path.
+All scripts use project-relative paths (`./data`, `./outputs`, `./models`). Keep it that way.
+
+### No behavioral_risk_scores.csv
+The app will use synthetic risk automatically.
+
+To use model scores:
+```bash
+python src/risk_scoring_run.py
+cp outputs/behavioral_risk_scores.csv data/behavioral_risk_scores.csv
+```
+
+### XGBoost Missing
+We degrade to LogReg + RF.
+Install to enable: `pip install xgboost`
+
+## ✅ Validation Checklist
+
+- [ ] **Class balance:** Is there enough positives to learn? (Runner prints label distribution)
+- [ ] **Leakage:** Train/valid split is by driver, not by row
+- [ ] **Encoding & scaling:** Fit on train only (handled by pipeline/models)
+- [ ] **Sanity of importances:** Excess speed/hard events should rank high
+- [ ] **Calibration (optional):** Consider Platt/Isotonic if used for pricing
+
+## 🗺️ Roadmap & Future Work
+
+### Temporal Forecasting
+- Lookback window (e.g., last 90 days) → predict next 180 days
+- Enforce time-based cutoff
+
+### Calibration
+- CalibratedClassifierCV, calibration curves, Brier score
+- Make probabilities pricing-grade
+
+### Distance & Routing
+- Haversine distance per trip
+- (Optional) map-matching, route risk exposure to known hotspots
+
+### Streaming
+- Kafka ingest → Spark/Flink jobs compute online features
+- Feature Store (e.g., Feast) for offline/online parity
+
+### Cloud
+- S3 data lake
+- Serverless/containers for scoring API
+- CI/CD with model registry (MLflow)
+
+### Governance
+- Drift detection
+- Periodic backtests
+- Fairness auditing
+- Monotone constraints where appropriate
+
