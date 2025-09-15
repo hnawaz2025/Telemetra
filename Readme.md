@@ -7,9 +7,13 @@ End-to-end system that converts raw GPS/accelerometer trips into driver-level be
 ```
 .
 ├── src/
+│   ├── simulations.py
+│   ├── make_area_h3.py
 │   ├── pipeline.py               # BehavioralRiskPipeline + feature engineering
 │   ├── risk_scoring.py           # Models (LogReg, RandomForest, optional XGBoost)
 │   └── risk_scoring_run.py       # Orchestrates pipeline → modeling → scores
+│   └── pricing_engine.py         # Calculating insurance premiums given the trained models
+│   └── price_engine_run.py         
 ├── app.py                        # Streamlit dashboard (local CSVs only)
 ├── data/                         # Place input CSVs here
 ├── outputs/                      # Scores, features, reports (created)
